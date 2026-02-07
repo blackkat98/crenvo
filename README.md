@@ -14,16 +14,16 @@ Inspired by Laravel's `php artisan key:generate`, **crenvo** brings secure envir
 
 ## 2. CLI Commands
 
-### `npx crenv code:generate --envFile <path>`
+### `npx crenvo code:generate --envFile <path>`
 Run this command to create an `ENC_CODE` in your env file.
 * **--envFile / -e**: Specify file path (Default: `.env` in project root).
 
-### `npx crenv encrypt <input> --envFile <path> --writeAs <field>`
+### `npx crenvo encrypt <input> --envFile <path> --writeAs <field>`
 Encrypt a string value using the code in the env file.
 * **--envFile / -e**: Specify file path.
 * **--writeAs / -w**: Write the result into the env file under the given variable name.
 
-### `npx crenv decrypt <input> --envFile <path>`
+### `npx crenvo decrypt <input> --envFile <path>`
 Decrypt a string value using the code in the env file.
 * **--envFile / -e**: Specify file path.
 
