@@ -1,6 +1,6 @@
 {
   "name": "crenvo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Laravel-inspired, zero-dependency CLI and Library for env file encryption",
   "keywords": [
     "env",
