@@ -23,20 +23,20 @@ const srcStr = positionals[1]
 const execute = async () => {
     switch (command) {
         case 'code:generate':
-            return await setCode(args.envFile)
+            return setCode(args.envFile)
 
         case 'encrypt':
             if (args.writeAs) {
-                await encryptAndSet(srcStr, args.writeAs, args.envFile)
+                encryptAndSet(srcStr, args.writeAs, args.envFile)
             } else {
-                const encrypted = await encrypt(srcStr, args.envFile)
+                const encrypted = encrypt(srcStr, args.envFile)
                 console.log('\x1b[32m%s\x1b[0m', `Encryption done: ${srcStr} => ${encrypted}`)
             }
 
             break
 
         case 'decrypt':
-            const decrypted = await decrypt(srcStr, args.envFile)
+            const decrypted = decrypt(srcStr, args.envFile)
             console.log('\x1b[32m%s\x1b[0m', `Encryption done: ${srcStr} => ${decrypted}`)
             break
 
